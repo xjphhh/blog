@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-node-
 
     #  安装依赖
-    -  run: cnpm ci
+    -  run: npm ci
 
     #  打包构建
     -  run: npm run build
