@@ -14,7 +14,7 @@ jobs:
     #  下载仓库代码
       uses: actions/checkout@v2
 
-    # 缓存依赖
+    #  缓存依赖
     - name: Cache dependencies
       # 设置包缓存目录，避免每次下载
       uses: actions/cache@v1
