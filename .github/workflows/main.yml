@@ -23,14 +23,14 @@ jobs:
         restore-keys: |
             ${{ runner.os }}-node-
 
-      # 安装依赖
-     - run: cnpm ci
+    #  安装依赖
+    -  run: cnpm ci
 
-      # 打包构建
-     - run: npm run build
+    #  打包构建
+    -  run: npm run build
 
-      # 发布到Github Pages
-     - name: Deploy
+    # 发布到Github Pages
+    -  name: Deploy
        uses: peaceiris/actions-gh-pages@v2
        env: 
         PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
